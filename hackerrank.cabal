@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: c871986e5b868f2d7eec281e0d6ddacb796c90e1cbc21da14492650c17b71322
+-- hash: 1f2cbaabebeb3b58109332b94b71201eb9691eb06c8c4d93946d087a12e28a87
 
 name:           hackerrank
 version:        0.1.0.0
@@ -31,6 +31,7 @@ library
       ElectronicsShop
       GradingStudents
       Kangaroo
+      TheHurdleRace
       Util
   other-modules:
       Paths_hackerrank
