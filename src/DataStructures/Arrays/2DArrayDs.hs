@@ -1,7 +1,7 @@
 module TwoDArrayDs where
 
 -- 2D Array - DS
--- https://www.hackerrank.com/challenges/2d-array/problem
+-- https://www.hackerrank.com/challenges/2d-array
 
 glassheads = (+) . (*6) <$> [0..3] <*> [0..3]
 

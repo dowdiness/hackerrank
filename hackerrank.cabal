@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 198c7ec262282b394f5edb90c60585b627ee54939a4e87e1f33fb997e52acac1
+-- hash: 2cb8cc072a1624c7eecd03680d3708bcf65c3331eecae7c0275aaab8f9257eaa
 
 name:           hackerrank
 version:        0.1.0.0
@@ -35,6 +35,11 @@ library
       Algorithms.Implementation.SockMerchant
       Algorithms.Implementation.TheHurdleRace
       DataStructures.Arrays.ArraysDS
+      Functional.Introduction.FilterArray
+      Functional.Introduction.HelloWorld
+      Functional.Introduction.HelloWorldNTimes
+      Functional.Introduction.ListReplication
+      Functional.Introduction.SolveMeFirstFP
       Util
   other-modules:
       Paths_hackerrank
