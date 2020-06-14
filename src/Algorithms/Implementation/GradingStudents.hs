@@ -1,4 +1,4 @@
-module GradingStudents where
+module Algorithms.Implementation.GradingStudents where
 
 -- Grading Students
 -- https://www.hackerrank.com/challenges/grading/problem

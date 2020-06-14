@@ -1,4 +1,6 @@
-module SockMerchant where
+{-# LANGUAGE TupleSections #-}
+
+module Algorithms.Implementation.SockMerchant where
 
 -- SockMerchant
 -- https://www.hackerrank.com/challenges/sock-merchant
@@ -12,7 +14,7 @@ countPairs (count, acc) (_, n) = if acc == n then (count + 1, "drop") else (coun
 sockMerchant :: [String] -> Int
 sockMerchant [] = 0
 sockMerchant xs =
-    fst $ foldl1' countPairs $ map (0, y) xs
+    fst $ foldl1' countPairs $ map (0,) xs
 
 main :: IO()
 main = interact $ show . sockMerchant . sort . tail . words

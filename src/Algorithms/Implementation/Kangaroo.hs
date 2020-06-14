@@ -1,4 +1,4 @@
-module Kangaroo where
+module Algorithms.Implementation.Kangaroo where
 
 -- Kangaroo
 -- https://www.hackerrank.com/challenges/kangaroo/problem

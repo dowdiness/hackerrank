@@ -1,12 +1,19 @@
-module ElectronicsShop
+module Algorithms.Implementation.ElectronicsShop
     where
 
-import Control.Monad
 -- Electronics Shop
 -- https://www.hackerrank.com/challenges/electronics-shop
 
-solve :: IO ()
-solve = putStrLn "someFunc"
+getList :: IO [Int]
+getList = map (read:: String -> Int) . words <$> getLine
 
-keyboards = [2,4]
-drives = [5,2,9]
+solve :: Int -> [Int] -> [Int] -> Int
+solve b k d = maximum $ (\x -> if null x then [-1] else x ) $ filter (<=b) $ (+) <$> k <*> d
+
+main :: IO ()
+main = do
+    [n,_,_] <- getList
+    keyboards <- getList
+    drives <- getList
+    print $ solve n keyboards drives
+    return ()

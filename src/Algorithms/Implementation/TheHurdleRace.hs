@@ -1,4 +1,4 @@
-module TheHurdleRace where
+module Algorithms.Implementation.TheHurdleRace where
 
 import           Control.Monad
 -- The Hurdle Race

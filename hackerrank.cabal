@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 2cb8cc072a1624c7eecd03680d3708bcf65c3331eecae7c0275aaab8f9257eaa
+-- hash: 551c0adc872e188f60d1a1d1d0b3342573efb11c0c447048874f349d3aca82ee
 
 name:           hackerrank
 version:        0.1.0.0
@@ -28,18 +28,23 @@ source-repository head
 library
   exposed-modules:
       Algorithms.Implementation.AppleandOrange
+      Algorithms.Implementation.CatsandaMouse
+      Algorithms.Implementation.CountingValleys
       Algorithms.Implementation.DesignerPDFViewer
       Algorithms.Implementation.ElectronicsShop
+      Algorithms.Implementation.FormingaMagicSquare
       Algorithms.Implementation.GradingStudents
       Algorithms.Implementation.Kangaroo
       Algorithms.Implementation.SockMerchant
       Algorithms.Implementation.TheHurdleRace
       DataStructures.Arrays.ArraysDS
+      Functional.AdHoc.SubsetSum
       Functional.Introduction.FilterArray
       Functional.Introduction.HelloWorld
       Functional.Introduction.HelloWorldNTimes
       Functional.Introduction.ListReplication
       Functional.Introduction.SolveMeFirstFP
+      Functional.MemoizationDP.PentagonalNumbers
       Util
   other-modules:
       Paths_hackerrank
@@ -47,6 +52,8 @@ library
       src
   build-depends:
       base >=4.7 && <5
+    , bytestring >=0.10.10.0
+    , vector >=0.12.1.2
   default-language: Haskell2010
 
 executable hackerrank-exe
@@ -58,7 +65,9 @@ executable hackerrank-exe
   ghc-options: -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       base >=4.7 && <5
+    , bytestring >=0.10.10.0
     , hackerrank
+    , vector >=0.12.1.2
   default-language: Haskell2010
 
 test-suite hackerrank-test
@@ -71,5 +80,7 @@ test-suite hackerrank-test
   ghc-options: -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       base >=4.7 && <5
+    , bytestring >=0.10.10.0
     , hackerrank
+    , vector >=0.12.1.2
   default-language: Haskell2010
