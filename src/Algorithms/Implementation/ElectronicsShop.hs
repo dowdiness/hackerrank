@@ -4,11 +4,20 @@ module Algorithms.Implementation.ElectronicsShop
 -- Electronics Shop
 -- https://www.hackerrank.com/challenges/electronics-shop
 
+import           Control.Monad
+import           Data.List
+import           Data.Maybe
+
 getList :: IO [Int]
 getList = map (read:: String -> Int) . words <$> getLine
 
 solve :: Int -> [Int] -> [Int] -> Int
-solve b k d = maximum $ (\x -> if null x then [-1] else x ) $ filter (<=b) $ (+) <$> k <*> d
+solve b k d =
+    fromMaybe (-1) $
+    listToMaybe $
+    sortBy (flip compare) $
+    filter (<=b) $
+    (+) <$> k <*> d
 
 main :: IO ()
 main = do
