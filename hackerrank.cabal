@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 551c0adc872e188f60d1a1d1d0b3342573efb11c0c447048874f349d3aca82ee
+-- hash: c4878ffa3566aa7578217af85bfcde949c051deb1fcb75f7ed5d75b50415a6e7
 
 name:           hackerrank
 version:        0.1.0.0
@@ -31,6 +31,7 @@ library
       Algorithms.Implementation.CatsandaMouse
       Algorithms.Implementation.CountingValleys
       Algorithms.Implementation.DesignerPDFViewer
+      Algorithms.Implementation.DivisibleSumPairs
       Algorithms.Implementation.ElectronicsShop
       Algorithms.Implementation.FormingaMagicSquare
       Algorithms.Implementation.GradingStudents
