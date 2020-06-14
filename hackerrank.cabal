@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: c4878ffa3566aa7578217af85bfcde949c051deb1fcb75f7ed5d75b50415a6e7
+-- hash: 43d77e25e76d207ee46ddf0c1a47dd6c1a7e317b5db5acedfd5109fc89133c04
 
 name:           hackerrank
 version:        0.1.0.0
@@ -38,6 +38,7 @@ library
       Algorithms.Implementation.Kangaroo
       Algorithms.Implementation.SockMerchant
       Algorithms.Implementation.TheHurdleRace
+      Algorithms.Warmup.DiagonalDifference
       DataStructures.Arrays.ArraysDS
       Functional.AdHoc.SubsetSum
       Functional.Introduction.FilterArray
