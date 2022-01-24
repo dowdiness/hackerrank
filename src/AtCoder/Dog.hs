@@ -1,3 +1,4 @@
+module AtCoder.Dog where
 -- import qualified Data.ByteString.Char8 as BS
 -- import           Data.Char
 -- import           Data.Maybe

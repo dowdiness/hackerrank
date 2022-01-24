@@ -1,3 +1,5 @@
+module Lib.Bisect where
+
 bisectRight :: Ord a => (Int -> a) -> a -> Int -> Int -> Int
 bisectRight f x lo hi
   | lo >= hi  = lo

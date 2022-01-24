@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 8faa1021a74dc9efab8ed56777128cbff8b3e3259c1be9ae89e91467ed0c6442
+-- hash: 2c677cfb9727a9067724b4ea8de5d3fe978a2a804b901b1ef307606cb877b0cc
 
 name:           hackerrank
 version:        0.1.0.0
@@ -49,6 +49,7 @@ library
       Algorithms.Warmup.MiniMaxSum
       Algorithms.Warmup.PlusMinus
       Algorithms.Warmup.Staircase
+      AtCoder.Abc236.C
       AtCoder.Dog
       AtCoder.ForbiddenList
       AtCoder.SkillUp
